@@ -9,7 +9,7 @@ import java.util.Scanner;
 
 /**
  * ChattiSofta created by Tijam Moradi on 11/10/17.
- * Version: 1.3
+ * @version : 1.3
  *
  *
  * @author Tijam Moradi tikimo@utu.fi

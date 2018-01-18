@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 /**
  * ChattiSofta created by Tijam Moradi on 11/10/17.
- * Version: 1.1
+ * @version : 1.1
  *
  * TODO: SSL-implementaatio
  *

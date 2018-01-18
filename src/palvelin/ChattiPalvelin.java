@@ -8,7 +8,7 @@ import java.util.List;
 
 /**
  * ChattiSofta created by Tijam Moradi on 11/10/17.
- * Version: 1.0
+ * @version 1.1
  *
  * @author Tijam Moradi tikimo@utu.fi
  * @author Niklas Kiuru nioski@utu.fi
@@ -36,7 +36,7 @@ public class ChattiPalvelin {
      *
      * @param porttiNumero
      */
-    public ChattiPalvelin(int porttiNumero) {
+    private ChattiPalvelin(int porttiNumero) {
         this.serverinPortti = porttiNumero;
         this.kaynnistaPalvelin();
     }
@@ -57,7 +57,7 @@ public class ChattiPalvelin {
      * metodissa hyvaksyAsiakkaita()
      *
      */
-    public void kaynnistaPalvelin () {
+    private void kaynnistaPalvelin() {
         asiakkaat = new ArrayList<AsiakasSaie>();
         ServerSocket palvelinSoketti = null;    //alustetaan palvelinsoketti tyhjaksi
 
@@ -76,7 +76,7 @@ public class ChattiPalvelin {
      * asiakkaat hallintaa varten. Asiakas otetaan vastaan soketilla ja
      * luodaan uusi asiakas säie.
      *
-     * @param palvelinSoketti
+     * @param palvelinSoketti palvelimen soketti
      */
     private void hyvaksyAsiakkaita(ServerSocket palvelinSoketti) {
 
