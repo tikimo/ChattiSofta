@@ -1,4 +1,4 @@
-package asiakas;
+package src.asiakas;
 
 import java.io.IOException;
 import java.net.Socket;

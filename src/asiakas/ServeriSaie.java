@@ -1,4 +1,4 @@
-package asiakas;
+package src.asiakas;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -75,14 +75,15 @@ public class ServeriSaie implements Runnable{
                     }
                 }
 
-                if (onViesteja) {
+                if (onViesteja && viestit.size() > 0) {     // tarkistetaan myös viestijonon koko, ettei tule
+                                                            // luku ennen kirjoitusta ongelmaa
                     String seuraavaViesti = viestit.getFirst(); // Palautetaan päällimmäinen viesti
 
                     serveriTulostus.println(kayttajaNimi + " > " + seuraavaViesti); // Tulostaa viestin
                     serveriTulostus.flush();
 
                     synchronized (viestit) {    // Synkronoidaan ettei ongelmia tule samanaikaisten viestinlisäysten kanssa
-                        seuraavaViesti = viestit.pop(); // poistetaan päällimmäinen (eka) viesti
+                        viestit.pop(); // poistetaan päällimmäinen (eka) viesti
                         onViesteja = !viestit.isEmpty();    //Jos viestijono on tyhjä, viestejä ei enää ole >> false
                     }
                 }

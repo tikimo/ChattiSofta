@@ -1,4 +1,4 @@
-package palvelin;
+package src.palvelin;
 
 import java.io.IOException;
 import java.io.PrintWriter;

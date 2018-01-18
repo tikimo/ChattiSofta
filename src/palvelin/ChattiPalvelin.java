@@ -1,4 +1,4 @@
-package palvelin;
+package src.palvelin;
 
 import java.io.IOException;
 import java.net.ServerSocket;
@@ -28,7 +28,7 @@ public class ChattiPalvelin {
      * @param args
      */
     public static void main(String[] args) {
-        ChattiPalvelin palvelin = new ChattiPalvelin(porttiNumero);
+        new ChattiPalvelin(porttiNumero);
     }
 
     /**
@@ -58,7 +58,7 @@ public class ChattiPalvelin {
      *
      */
     private void kaynnistaPalvelin() {
-        asiakkaat = new ArrayList<AsiakasSaie>();
+        asiakkaat = new ArrayList<>();
         ServerSocket palvelinSoketti = null;    //alustetaan palvelinsoketti tyhjaksi
 
         try {
