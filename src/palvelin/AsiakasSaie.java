@@ -24,7 +24,7 @@ public class AsiakasSaie implements Runnable {
      * @param chattiPalvelin Ottaa palvelimen parametrikseen
      * @param soketti Soketti "kopioidaan"
      */
-    public AsiakasSaie(ChattiPalvelin chattiPalvelin, Socket soketti)  {
+    AsiakasSaie(ChattiPalvelin chattiPalvelin, Socket soketti)  {
         this.palvelin = chattiPalvelin;
         this.soketti = soketti;
     }
