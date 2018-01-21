@@ -25,7 +25,7 @@ public class ChattiPalvelin {
     /**
      * Main metodi, käynnistää uuden palvelimen luomalla ChattiPalvelin olion.
      *
-     * @param args
+     * @param args argumentit, tarpeeton
      */
     public static void main(String[] args) {
         new ChattiPalvelin(porttiNumero);
@@ -34,7 +34,7 @@ public class ChattiPalvelin {
     /**
      * Konstruktori, käynnistää tämän (this) palvelimen annetulla portilla
      *
-     * @param porttiNumero
+     * @param porttiNumero portin numero
      */
     private ChattiPalvelin(int porttiNumero) {
         this.serverinPortti = porttiNumero;
