@@ -1,4 +1,4 @@
-package src.asiakas;
+package src.client;
 
 import java.io.IOException;
 import java.net.Socket;
@@ -42,7 +42,7 @@ public class Customer {
      *
      * @param name käyttäjänimi, joka esiintyy chattaamisessa
      * @param host Palvelimen osoite, esim localhost tai 127.0.0.1
-     * @param portNumber Portti, jossa palvelin operoi
+     * @param portNumber Portti, jossa server operoi
      */
     private Customer(String name, String host, int portNumber) {
         this.userName = name;
